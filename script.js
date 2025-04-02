@@ -52,4 +52,12 @@ function playGame(rounds = 2) {
   }
 }
 
-playGame();
+const playerSelectionBtn = document.querySelectorAll('.playerSelection');
+
+playerSelectionBtn.forEach(el => {
+  el.addEventListener('click', (event) => {
+    console.log('Select ', event.target.getAttribute("id"));
+  });
+});
+
+// playGame();
